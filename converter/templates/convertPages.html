@@ -1,0 +1,16 @@
+
+{% extends "general.html" %}
+
+  
+{% block title %}<title>Convert Temperature</title>{% endblock %}
+{% block banner %}<h1>Convert Temperature</h1>{% endblock %}
+
+{% block content %}
+  {% csrf_token %}  
+  {{form}}
+  
+{% endblock %}
+
+{% block result %}
+  {{temp}} 
+{% endblock %}

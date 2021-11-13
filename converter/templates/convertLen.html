@@ -1,0 +1,16 @@
+{% extends "general.html" %}
+
+  
+{% block title %}<title>Convert Length</title>{% endblock %}
+{% block banner %}<h1>Convert Length</h1>{% endblock %}
+
+{% block content %}
+  {% csrf_token %}  
+  {{len_form}}
+  
+{% endblock %}
+
+
+{% block result %}
+  {{user_len}} 
+{% endblock %}

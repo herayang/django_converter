@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+
+<head>
+    {% block title %}<title>Convert Webpage</title> {% endblock%}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">    
+</head>
+<body>
+    <div class="banner">
+        {% block banner %}<h1>Title</h1> {% endblock %}
+    </div>
+    <div class= "page">
+        <div class= "sidebar">
+            <ul>
+                <li><a href="{% url 'conTemp' %}">C ↔ F</a></li>
+                <li><a href="{% url 'conLen' %}">cm ↔ in</a></li>
+                <li><a href="{% url 'conVol' %}">fl oz ↔ ml</a></li>
+            </ul>
+        </div>
+    
+        <div class="contents">
+            <div class= "result">
+                <form method= "post">
+                  {% block content%} {% endblock %}
+                  <button type="submit">Convert</button>
+                </form>
+              
+                <h2>Converted Value:</h2>
+                
+                <p>{% block result %}result{% endblock %}</p>
+                
+              </div>
+    
+        </div>  
+    </div> 
+
+</body>

@@ -1,0 +1,16 @@
+{% extends "general.html" %}
+
+  
+{% block title %}<title>Convert Volume(Liquid)</title>{% endblock %}
+{% block banner %}<h1>Convert Volume(Liquid)</h1>{% endblock %}
+
+{% block content %}
+  {% csrf_token %}  
+  {{vol_form}}
+  
+{% endblock %}
+
+
+{% block result %}
+  {{user_vol}} 
+{% endblock %}
