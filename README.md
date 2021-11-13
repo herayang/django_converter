@@ -3,7 +3,7 @@
 
 My first django project, where I created a simple website that helps convert units (Celcius <-> Fahrenheit, cm <-> inch , fluid ounce <-> ml). User can click on a desired converter page, choose and type in the number. The website will then use the submitted number, convert it, and display it under the "converted value" text. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/cgR-bXxoMAc)
 
 # Web Pages
 
